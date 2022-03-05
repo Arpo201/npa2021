@@ -2,10 +2,10 @@ import json
 import requests
 requests.packages.urllib3.disable_warnings()
 
-api_url = "https://10.0.15.130/restconf/data/ietf-interfaces:interfaces/interface=GigabitEthernet1"
+api_url = "https://10.0.15.22/restconf/data/ietf-interfaces:interfaces/interface=GigabitEthernet1"
 
-headers = { "Accept": "application/yang-data+json", 
-            "Content-type":"application/yang-data+json"
+headers = {"Accept": "application/yang-data+json",
+           "Content-type": "application/yang-data+json"
            }
 
 basicauth = ("admin", "cisco")
